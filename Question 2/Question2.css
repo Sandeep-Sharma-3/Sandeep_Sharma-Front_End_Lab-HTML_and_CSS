@@ -1,0 +1,94 @@
+html,body {
+    height: 100%;
+}
+
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.middle_box {
+    background-color: #f2f2f2;
+    width: 350px;
+    height: 600px;
+    position: relative;
+}
+
+.bars_and_percentages_container {
+    display: flex;
+    justify-content: center;
+}
+
+.bar_and_percentage {
+    display: inline-block;
+    width: 50px;
+    margin-top: 30px;
+    margin-right: 30px;
+    margin-left: 30px;
+    text-align: center;
+}
+
+.bar {
+    height: 450px;
+    width: 100%;
+    background-color: white;
+    position: relative;
+}
+
+#bar1 {
+    background-color: #cac6c0;
+    height: 30%;
+    width: 100%;
+    position: absolute;
+    bottom: 0px;
+    animation-name: bar1_animation;
+    animation-duration: 1s;
+}
+
+@keyframes bar1_animation {
+    from {height: 0%;}
+    to {height: 30%;}
+}
+
+#bar2 {
+    background-color: #cac6c0;
+    height: 40%;
+    width: 100%;
+    position: absolute;
+    bottom: 0px;
+    animation-name: bar2_animation;
+    animation-duration: 1s;
+}
+
+@keyframes bar2_animation {
+    from {height: 0%;}
+    to {height: 40%;}
+}
+
+#bar3 {
+    background-color: #cac6c0;
+    height: 80%;
+    width: 100%;
+    position: absolute;
+    bottom: 0px;
+    animation-name: bar3_animation;
+    animation-duration: 1s;
+}
+
+@keyframes bar3_animation {
+    from {height: 0%;}
+    to {height: 80%;}
+}
+
+.percentage {
+    margin: 5px;
+}
+
+#h1_text_container {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    text-align: center;
+}
